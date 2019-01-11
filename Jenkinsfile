@@ -2,7 +2,7 @@ pipeline {
     agent any
 	
 	parameters {
-        string(name: 'userFlag', defaultValue: 'aman', description: 'Enter your name')
+        string(name: 'id', defaultValue: 'aman', description: 'Enter your name')
     }
 
 libraries {
@@ -12,7 +12,7 @@ libraries {
     stages{
       stage('demo') {
           steps {
-             hello '${env.name}'
+             hello '${params.id}'
            }
         }
       }
