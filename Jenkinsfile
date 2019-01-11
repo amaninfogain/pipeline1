@@ -7,7 +7,7 @@ libraries {
     stages{
       stage('demo') {
           steps {
-             Hello 'aman'
+             hello 'aman'
            } 
         }     
       }
