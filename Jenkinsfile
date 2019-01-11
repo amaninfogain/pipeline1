@@ -12,7 +12,7 @@ libraries {
     stages{
       stage('demo') {
           steps {
-             hello '${params.id}'
+             hello "${params.id}"
            }
         }
       }
