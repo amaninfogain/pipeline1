@@ -1,5 +1,10 @@
 pipeline {
     agent any
+	
+	parameters {
+        string(name: 'userFlag', defaultValue: 'aman', description: 'Enter your name')
+    }
+
 libraries {
   lib('myvar@master')
 }
@@ -7,8 +12,8 @@ libraries {
     stages{
       stage('demo') {
           steps {
-             hello 'aman'
-           } 
-        }     
+             hello '${env.name}'
+           }
+        }
       }
 }
