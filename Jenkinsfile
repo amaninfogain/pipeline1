@@ -22,7 +22,7 @@ libraries {
         }
       stage('Deploy') {
           steps {
-             copy "${env.source},${env.target}"
+             sh 'lscpu'
 
            }
         }
