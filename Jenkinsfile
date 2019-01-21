@@ -15,5 +15,10 @@ libraries {
              hello "${params.id}"
            }
         }
+      stage('Deploy') {
+          steps {
+             sh 'lscpu'
+           }
+        }
       }
 }
