@@ -16,7 +16,16 @@ libraries {
           steps {
 		  script{	  
                     hello.call "${params.id}"
-	            hello.now "/home/xavient/india,/home/xavient/git"		  
+	            		  
+		  }
+           }
+        }
+	    
+      stage('deploy') {
+          steps {
+		  script{	  
+                    
+	            copy.now "/home/xavient/india,/home/xavient/git"		  
 		  }
            }
         }
