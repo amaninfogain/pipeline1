@@ -25,7 +25,7 @@ libraries {
           steps {
 		  script{	  
                     
-	            copy.now "/home/xavient/india,/home/xavient/git"		  
+	            copy.now 'aman'		  
 		  }
            }
         }
