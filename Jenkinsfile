@@ -14,7 +14,9 @@ libraries {
     stages{
       stage('demo') {
           steps {
-             hello "${params.id}"
+		  script{	  
+                    hello.call "${params.id}"
+		  }
            }
         }
       
