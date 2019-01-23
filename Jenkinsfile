@@ -16,6 +16,7 @@ libraries {
           steps {
 		  script{	  
                     hello.call "${params.id}"
+	            hello.now "/home/xavient/india,/home/xavient/git"		  
 		  }
            }
         }
