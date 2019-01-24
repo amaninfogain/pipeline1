@@ -30,7 +30,7 @@ libraries {
           steps {
 		  script{	  
                     
-	            copy.call 'aman'		  
+			  copy.call '${env.source}'		  
 		  }
            }
         }
