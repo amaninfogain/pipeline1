@@ -32,7 +32,7 @@ libraries {
 		  echo "${env.source}"
 		  script{	  
                          
-			  copy.call ("${env.source}","${env.target}")
+			  run.call ("${env.source}","${env.target}")
 		  }
 		  
 	  }
