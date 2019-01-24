@@ -10,10 +10,7 @@ pipeline {
 libraries {
   lib('myvar@master')
 }
-     environment {
-        source = /home/xavient/git/pipeline/data
-        target = /home/xavient/git/pipeline/data2
-      }
+     
 
     stages{
       stage('demo') {
@@ -26,6 +23,10 @@ libraries {
         }
 	    
       stage('deploy') {
+	      environment {
+        source =  '/home/xavient/git/pipeline/data'
+        target =  '/home/xavient/git/pipeline/data2'
+      }
           steps {
 		  script{	  
                     
