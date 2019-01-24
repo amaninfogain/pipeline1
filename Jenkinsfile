@@ -28,8 +28,10 @@ libraries {
         target =  '/home/xavient/git/pipeline/data2'
       }
           steps {
+		  
+		  echo "${env.source}"
 		  script{	  
-                         echo "${env.source}"
+                         
 			  copy.call ("${env.source}","${env.target}")
 		  }
 		  
