@@ -25,7 +25,7 @@ libraries {
           steps {
 		  script{	  
                     
-	            copy.now 'aman'		  
+	            copy.call 'aman'		  
 		  }
            }
         }
