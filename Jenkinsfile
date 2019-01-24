@@ -29,7 +29,7 @@ libraries {
       }
           steps {
 		  script{	  
-                         echo "${env.source},${env.target} "
+                         echo "${env.source}"
 			  copy.call ("${env.source}","${env.target}")
 		  }
 		  
