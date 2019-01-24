@@ -30,11 +30,10 @@ libraries {
           steps {
 		  script{	  
                     
-			  copy.call "${env.source}"		  
+			  copy.call "${env.source},${env.target}"
 		  }
-           }
-        }
-      
-      
+		  
+	  }
+      }
       }
 }
