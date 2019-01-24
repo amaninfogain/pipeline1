@@ -4,11 +4,7 @@ pipeline {
 	parameters {
         string(name: 'id', defaultValue: 'aman', description: 'Enter your name')
     }
-   environment {
-        
-        source = /home/xavient/git/pipeline/data
-        target = /home/xavient/git/pipeline/data2
-      }
+  
      
 
 libraries {
@@ -20,7 +16,7 @@ libraries {
           steps {
 		  script{	  
                     hello.call "${params.id}"
-	            		  
+	            sh 'lscpu'	  
 		  }
            }
         }
