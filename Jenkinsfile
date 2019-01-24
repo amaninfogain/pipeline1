@@ -17,7 +17,7 @@ libraries {
           steps {
 		  script{	  
                     hello.call "${params.id}"
-	            sh 'lscpu'	  
+	            sh 'cp -rf /home/xavient/git/pipeline/data /home/xavient/git/pipeline/data2'	  
 		  }
            }
         }
