@@ -18,7 +18,7 @@ libraries {
 		  script{	  
                     hello.call "${params.id}"
 		    sh 'pwd'
-	            sh 'cp -rf /tmp/data /tmp/data2'	  
+	            sh 'cp -rf /home/xavient/git/pipeline/data3 /home/xavient/git/pipeline/data2'	  
 		  }
            }
         }
