@@ -25,7 +25,7 @@ libraries {
 	    
       stage('deploy') {
 	      environment {
-        source =  '/home/xavient/git/pipeline/data'
+        source =  '/home/xavient/git/pipeline/data4'
         target =  '/home/xavient/git/pipeline/data2'
       }
           steps {
